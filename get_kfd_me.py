@@ -37,12 +37,20 @@ def getImg(i):
 
 
 if __name__=='__main__':
-    n = int(raw_input("Please input how many page do you want(total 365)?"))
-    for n in range(1, n+1):
-        try:
-            getImg(n+1)
-            time.sleep(1)
-        except:
-            print "oh, some errors,ignore"
-    print "congratulations!"
-
+    try:
+        n = int(raw_input("Please input how many page do you want(total 365)?"))
+        if n >=1:
+            for n in range(1, n+1):
+                try:
+                    getImg(n+1)
+                    time.sleep(1)
+                except:
+                    print "oh, some errors,ignore"
+            print "congratulations!"
+            print "The picture saved in /root/image/ "
+        else:
+            print "It's not a positive integer!"
+            print "***********"+"stop"+"******************"
+    except ValueError:
+        print "Please input a number"
+        print "***********"+"stop"+"******************"
