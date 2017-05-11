@@ -7,7 +7,7 @@ email:liuwenju0123@gmail.com
 description:get the ip info of the host
 """
 
-#import requests
+import requests
 import os,commands
 
 
