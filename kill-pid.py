@@ -24,6 +24,7 @@ def getPid(process):
         commands.getoutput('kill -9 "%s"'% pid)
 
 if __name__ == '__main__':
-    process = 'pipesocks'#infomation of pid you want kill
+    #process = 'pipesocks'#infomation of pid you want kill
+    process = str(raw_input("please input the command you want to kill:(like:top)"))
     getPid(process)
 
