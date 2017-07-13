@@ -11,3 +11,5 @@ kill-pid.py 杀死所给command的pid
 get_kfd_me.py 爬取10pic.kfd.me的图片,所需第三方库request,BeautifulSoup4
 
 file_bak.py 以日期压缩文件夹并备份到指定位置
+
+dbback.py 用mysqldump完全备份一些小的数据库
