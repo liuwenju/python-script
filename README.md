@@ -1,5 +1,5 @@
 # python-script
-我写的python脚本(基于python2.7&python3.6)
+我写的玩具python脚本(基于python2.7&python3.6)
 
 ##
 get_ip.py 获取当前ip信息，所需第三方库requests
